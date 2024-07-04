@@ -1,8 +1,7 @@
 package ch002;
 
 public class Blocks {
-
-    long l;
+    static long l;
     {
 
     }
@@ -24,4 +23,29 @@ public class Blocks {
     }
 
     //Method block
-}
+    public static void main(String[] args) {
+        Blocks block = new Blocks();
+        System.out.println(l);
+
+        {
+            int t = 14;
+            System.out.println(t);
+        }
+        block.f();
+    }
+        //inner class block
+        class InnerClass {
+        }
+
+        // Method block
+        public void f(){
+            // Local class block
+            new Blocks(){
+                public void sop() {
+                    System.out.println(l);
+                }
+            };
+        }
+
+    }
+
