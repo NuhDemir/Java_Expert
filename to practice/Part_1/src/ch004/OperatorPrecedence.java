@@ -8,6 +8,16 @@ int c = 10;
 
 float rs = a+ ++b * c /a*b;
 System.out.println("rs: " +rs);
+System.out.println("b: "+ b);
+
+rs = a + (++b)*((c/a)*b);
+System.out.println("rs: " +rs);
+
+        System.out.println("a: " + a + " b: " + b + " c: " + c);
+        a += b += c;
+        System.out.println("a: " + a + " b: " + b + " c: " + c);
+
+        System.out.println();
 
     }
 
