@@ -75,5 +75,52 @@ public class ShiftOperators {
         System.out.println("i << 1:    " + i + " " + getBinary(i)); // 2
         i = i << 3;
         System.out.println("i << 3:    " + i + " " + getBinary(i)); // 2
+
+        //
+//        i = -3;
+//        System.out.println("i: " + i);
+//        i = i >> 1;
+//        System.out.println("i >> 1: " + i);
+//
+//        i = i << 5;
+//        System.out.println("i << 5: " + i);
+//
+//        System.out.println("\nUnsigned Shift of A Negative");
+//
+//        i = -3;
+//        System.out.println("i: " + i);
+//        i = i >>> 1;
+//        System.out.println("i >>> 1: " + i);
+//
+//        i = i << 5;
+//        System.out.println("i << 5: " + i);
+//
+//        i = i >>> 8;
+//        System.out.println("i >>> 8: " + i);
+//
+//        long l1 = 9;
+//        l1 = l1 >> 2;
+//        System.out.println("l1: " + l1);
+//
+////		Promotions
+//        l1 = 200L;
+//        byte b1 = 2;
+//        long l2 = l1 >> b1;
+//        System.out.println("l2: " + l2);
+//        byte b2 = b1; // b1 isn't promoted to int
+//
+////		byte c = b1 << 5;
+//		byte c = (byte) (b1 << 5);
+//		System.out.println("c: " + c);
+//
+//		int i2 = (byte) (b1 << 5L); // Promoted only to int
+//		System.out.println("c: " + c);
+//
+////		i2 =  l1 << 5L; // Promoted to long
+//		i2 =  (int) (l1 << 5L);
+//		System.out.println("l1: " + l1);
+//
+//		System.out.println(Integer.toBinaryString(-1>>>0));
+
     }
 }
