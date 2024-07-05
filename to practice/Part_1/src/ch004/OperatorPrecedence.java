@@ -31,7 +31,21 @@ System.out.println("u: " + u);
 
     int x = 10, y=8,z=3;
     System.out.println("x*y%z: " +x *y % z);
+        System.out.println("x*y%z: " + x * (y % z));
+        boolean b1 = false, b2 = true, b3 = true;
+        boolean bool = b1 & b2 | b3;
+        System.out.println("bool: " + bool);
 
+        //The + operator is left associative
+        System.out.println("Java " + 1 + 5);//All strings
+        System.out.println(1+5 +" Java");
+        System.out.println("1" + "6" + "Java");
+        System.out.println('1' + '6' + "Java");
+        System.out.println("Java" + (1 + 6));
+
+        //Parameter evaluation
+        String s = "Java";
+        //print(s,s = "Javacı ",s);
 
 
     }
