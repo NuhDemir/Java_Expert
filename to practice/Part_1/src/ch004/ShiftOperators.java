@@ -6,26 +6,43 @@ public class ShiftOperators {
     public static void main(String[] args) {
 
     }
-    private static void makePositiveShifts()
-    {
 
-    }
-    private static void makeNegativeShifts()
-    {
+    private static void makePositiveShifts() {
 
     }
 
-    private static void makeUnsignedShifts()
-    {
-
-    }
-    public static void shiftCircular()
-    {
+    private static void makeNegativeShifts() {
 
     }
 
-    public  void shifts()
-    {
+    private static void makeUnsignedShifts() {
+        int i = 64;
+        System.out.println("i:         " + i + "    Binary: " + getBinary(i));
+        i = i >>> 5;
+        System.out.println("i >> 5:     " + i + "    Binary: " + getBinary(i));
+
+        i = -64;
+        System.out.println("i:        " + i + "    Binary: " + getBinary(i));
+        i = i >>> 5;
+        System.out.println("i >>> 5:  " + i + "    Binary: " + getBinary(i));
+
+    }
+
+    public static void shiftCircular() {
+        System.out.println("\nShifting Circular: ");
+        int i = 64;
+        System.out.println("i:    " + i + " Binary: " + getBinary(i));
+        i = i >> 5;
+        System.out.println("İ>>5:  " + i + " Binary: " + getBinary(i));
+        i = 64;
+        System.out.println("i:         " + i + "    Binary: " + getBinary(i));
+        i = i >> 37;
+        System.out.println("i >> 37:    " + i + "    Binary: " + getBinary(i));
+
+
+    }
+
+    public void shifts() {
         System.out.println("Signed Shifts");
         int i = 512;
         System.out.println("i: " + i);
