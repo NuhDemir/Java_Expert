@@ -15,7 +15,11 @@ public class TernaryOperator {
     }
 
     public static void evaluation() {
+        System.out.println(true ? "true" : "false");
+        System.out.println(false ? "true" : "false");
 
+        System.out.println(true ? returnTrue() : returnFalse());
+        System.out.println(false ? returnTrue() : returnFalse());
     }
 
     public static String returnTrue() {
