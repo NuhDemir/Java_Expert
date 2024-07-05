@@ -6,7 +6,7 @@ public class Types {
 
     int i = 1; //i must have a  type that is suitable for value 1
     //i = true;
-    
+
 
 
 }
