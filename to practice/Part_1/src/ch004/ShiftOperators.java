@@ -12,6 +12,17 @@ public class ShiftOperators {
     }
 
     private static void makeNegativeShifts() {
+        int i = -1; // 0000 0000 0000 0001
+        System.out.println("i:         " + i + "    Binary: " + getBinary(i));
+        i = i << 1; // 0000 0000 0000 0010
+        System.out.println("i << 1:    " + i + "    Binary: " + getBinary(i));
+        i = i << 6; // 0000 0000 1000 0000
+        System.out.println("i << 6:    " + i + "  Binary: " + getBinary(i));
+        i = i >> 6; // 0000 0000 0000 0001
+        System.out.println("i >> 6:    " + i + "    Binary: " + getBinary(i));
+        i = i >> 1; // 0000 0000 0000 0000
+        System.out.println("i >> 1:    " + i + "    Binary: " + getBinary(i));
+
 
     }
 
