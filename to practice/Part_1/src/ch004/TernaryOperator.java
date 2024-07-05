@@ -3,10 +3,27 @@ package ch004;
 public class TernaryOperator {
 
     public static void main(String[] args) {
-
+        basics();
+        ifElseEquivalnce();
+        evaluation();
+        hard();
+        errors();
     }
 
     public static void basics() {
+        int i = 18;
+        int j = 11;
+        int min = (i <= j) ? i : j;
+        System.out.println("Min: " + min);
+
+        System.out.println((i <= j) ? "true" : "false");
+        System.out.println(!(i <= j) ? "true" : "false");
+
+        int x = 0;
+        int y = 5;
+        int z = 11;
+        int f = x == 2 ? y : z;
+        System.out.println(f);
 
     }
 
@@ -15,23 +32,23 @@ public class TernaryOperator {
         int i = 8;
         int j = 11;
         int min = (i <= j) ? i : j;
-        System.out.println("Min: " +min);
+        System.out.println("Min: " + min);
 
-        if (i<=j)
+        if (i <= j)
             min = i;
         else
             min = j;
-        System.out.println("Min: " +min);
+        System.out.println("Min: " + min);
 
         String string1 = "I love Java very much!";
         String string2 = "I love nothing!";
         String string3 = (string1.matches("Java.*")) ? string1 : string2;
-        System.out.println("String3: " +string3);
+        System.out.println("String3: " + string3);
 
         if (string1.matches(".*Java.*"))
             string3 = string1;
-        else string3 =string2;
-        System.out.println("String 3: " +string3);
+        else string3 = string2;
+        System.out.println("String 3: " + string3);
 
 
     }
