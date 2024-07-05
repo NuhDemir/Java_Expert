@@ -12,6 +12,28 @@ public class TernaryOperator {
 
     public static void ifElseEquivalnce() {
 
+        int i = 8;
+        int j = 11;
+        int min = (i <= j) ? i : j;
+        System.out.println("Min: " +min);
+
+        if (i<=j)
+            min = i;
+        else
+            min = j;
+        System.out.println("Min: " +min);
+
+        String string1 = "I love Java very much!";
+        String string2 = "I love nothing!";
+        String string3 = (string1.matches("Java.*")) ? string1 : string2;
+        System.out.println("String3: " +string3);
+
+        if (string1.matches(".*Java.*"))
+            string3 = string1;
+        else string3 =string2;
+        System.out.println("String 3: " +string3);
+
+
     }
 
     public static void evaluation() {
