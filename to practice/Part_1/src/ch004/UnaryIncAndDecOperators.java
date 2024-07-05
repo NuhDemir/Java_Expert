@@ -4,7 +4,9 @@ import javax.swing.text.Style;
 
 public class UnaryIncAndDecOperators {
     public static void main(String[] args) {
-
+        unaryIncrementAndDecrement1();
+//		unaryIncrementAndDecrement2();
+//		weirdBehavior();
     }
 
     public static void unaryIncrementAndDecrement1() {
@@ -34,7 +36,18 @@ public class UnaryIncAndDecOperators {
     }
 
     public static void unaryIncrementAndDecrement2() {
+        int i = 5;
+        ++i; // increment by 1
+        prt("i: " + i);
 
+        i++; // increment by 1
+        prt("i: " + i);
+
+        --i; // decrement by 1
+        prt("i: " + i);
+
+        i--; // decrement by 1
+        prt("i: " + i);
     }
 
     public static void weirdBehavior() {
