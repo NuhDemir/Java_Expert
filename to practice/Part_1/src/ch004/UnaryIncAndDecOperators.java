@@ -1,76 +1,84 @@
 package ch004;
 
-import javax.swing.text.Style;
-
+/*
+ *Bu örneklerde Java'da tek artış (increment)
+ *  ve tek azalış (decrement) operatörlerinin
+ * nasıl çalıştığını görebilirsiniz. Ön ekleme
+ * (++i veya --i) ve son ekleme (i++ veya i--)
+ * arasındaki farkı inceleyebilirsiniz.
+ * weirdBehavior metodunda ise bazı beklenmedik
+ *  davranışları inceleyip, bu operatörlerin
+ * çalışma şeklini daha iyi anlayabilirsiniz. */
 public class UnaryIncAndDecOperators {
     public static void main(String[] args) {
         unaryIncrementAndDecrement1();
-//		unaryIncrementAndDecrement2();
-//		weirdBehavior();
+//      unaryIncrementAndDecrement2();
+//      weirdBehavior();
     }
 
+    // Tek artış ve azalış operatörleri örneği
     public static void unaryIncrementAndDecrement1() {
         int i = 1;
-        prt("i   : \t" + i);
-        prt("++i : \t" + ++i); // Pre-increment
-        prt("i++ : \t" + i++); // Post-increment
-        prt("i   : \t" + i);
-        prt("--i : \t" + --i); // Pre-decrement
-        prt("i-- : \t" + i--); // Post-decrement
-        prt("i   : \t" + i);
+        yazdir("i   : \t" + i);
+        yazdir("++i : \t" + ++i); // Ön ekleme
+        yazdir("i++ : \t" + i++); // Son ekleme
+        yazdir("i   : \t" + i);
+        yazdir("--i : \t" + --i); // Ön çıkarma
+        yazdir("i-- : \t" + i--); // Son çıkarma
+        yazdir("i   : \t" + i);
 
         System.out.println();
 
         i = 1;
-        prt("i: \t" + i);
+        yazdir("i: \t" + i);
         int j = ++i;
-        prt("i: \t" + i + "\t j : \t" + j); // Pre-increment
+        yazdir("i: \t" + i + "\t j : \t" + j); // Ön ekleme
         j = i++;
-        prt("i: \t" + i + "\t j : \t" + j); // Post-increment
-        prt("i: \t" + i);
+        yazdir("i: \t" + i + "\t j : \t" + j); // Son ekleme
+        yazdir("i: \t" + i);
         j = --i;
-        prt("i: \t" + i + "\t j : \t" + j); // Pre-decrement
+        yazdir("i: \t" + i + "\t j : \t" + j); // Ön çıkarma
         j = i--;
-        prt("i: \t" + i + "\t j : \t" + j); // Post-decrement
-        prt("i: \t" + i);
+        yazdir("i: \t" + i + "\t j : \t" + j); // Son çıkarma
+        yazdir("i: \t" + i);
     }
 
+    // Kısa tek artış ve azalış operatörleri örneği
     public static void unaryIncrementAndDecrement2() {
         int i = 5;
-        ++i; // increment by 1
-        prt("i: " + i);
+        ++i; // 1 arttır
+        yazdir("i: " + i);
 
-        i++; // increment by 1
-        prt("i: " + i);
+        i++; // 1 arttır
+        yazdir("i: " + i);
 
-        --i; // decrement by 1
-        prt("i: " + i);
+        --i; // 1 azalt
+        yazdir("i: " + i);
 
-        i--; // decrement by 1
-        prt("i: " + i);
+        i--; // 1 azalt
+        yazdir("i: " + i);
     }
 
+    // İlginç davranış örneği
     public static void weirdBehavior() {
         int i = 0;
-        System.out.println("That's OK");
+        System.out.println("Bu normal");
         i = ++i;
         System.out.println("i: " + i);
         i = ++i + 2;
         System.out.println("i: " + i);
 
         i = 0;
-        System.out.println("Taht's not OK");
+        System.out.println("Bu anormal");
         i = i++;
+        System.out.println("i: " + i); // i neden artmadı?
 
-        System.out.println("i: " + i);//Why doesn't i increase
-
-        i = i++ + 2; //Why doesn't i++ increase i?
+        i = i++ + 2; // i++ neden i'yi arttırmadı?
         System.out.println("i: " + i);
 
-        System.out.println("That's OK too.");
+        System.out.println("Bu da normal.");
 
         i = 0;
-
         int j = i++;
         System.out.println("i: " + i);
         System.out.println("j: " + j);
@@ -78,12 +86,10 @@ public class UnaryIncAndDecOperators {
         int k = i++;
         System.out.println("i: " + i);
         System.out.println("k: " + k);
-
     }
 
-    static void prt(String s) {
+    // Yazdırma fonksiyonu
+    static void yazdir(String s) {
         System.out.println(s);
     }
-
-
 }
