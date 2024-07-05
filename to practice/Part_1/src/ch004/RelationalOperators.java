@@ -1,7 +1,7 @@
 package ch004;
 
 import java.util.Random;
-
+//İlişkisel Operatörler
 public class RelationalOperators {
 
     public static void main(String[] args) {
