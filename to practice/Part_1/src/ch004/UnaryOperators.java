@@ -6,6 +6,22 @@ public class UnaryOperators {
     }
 
     public static void unaryOperators() {
+// -21; //Error!
+        // +a; //Error!
+        //-b; //Error!
+        int a = 3;
+
+        int i = +12;
+        int j = -i;
+        int k = +i;
+        int l = +-4;
+        prt("i: "+ i + " j: " + j + " k: "+ k + " l: "+ l);
+
+        int m = +-7;
+        int n = -+9;
+        int o = - -11; // Better to write - (-11)
+        int p = -(-13);
+        prt("m: " + m + " n: " + n + " o: " + o + " p: " + p);
 
     }
 
