@@ -19,11 +19,13 @@ public class TernaryOperator {
     }
 
     public static String returnTrue() {
-
+        System.out.println("in returnTrue()");
+        return "true";
     }
 
     public static String returnFalse() {
-
+        System.out.println("in returnFalse()");
+        return "false";
     }
 
     private static void hard() {
@@ -38,9 +40,9 @@ public class TernaryOperator {
 
         System.out.println("x: " + x + "y: " + y + "z: " + z);
 
-        b = x < y ? x < z ? true:false:false; //Either x is smaller than both y and z at the same time or x isnot smaller than y
+        b = x < y ? x < z ? true : false : false; //Either x is smaller than both y and z at the same time or x isnot smaller than y
 
-        b = (x<y ? (x<z ? true:false):false);
+        b = (x < y ? (x < z ? true : false) : false);
         System.out.println(b);
     }
 
