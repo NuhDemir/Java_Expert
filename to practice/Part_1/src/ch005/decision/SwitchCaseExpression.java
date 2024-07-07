@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class SwitchCaseExpression {
     public static void main(String[] args) {
         SwitchCaseExpression se = new SwitchCaseExpression();
-
+se.demo1();
+se.demo2();
+se.demo3();
+se.demo4();
     }
 
 
@@ -73,6 +76,15 @@ public class SwitchCaseExpression {
 System.out.println("A number for a day Monday being 1: ");
 Scanner stdin = new Scanner(System.in);
 int day = stdin.nextInt();
+
+        System.out.print("Number of letters: ");
+        System.out.println(switch (day) {
+            case 1, 5, 7: yield 6;
+            case 2: yield 7;
+            case 4, 6: yield 8;
+            case 3: yield 9;
+            default: yield returnMinusOne();
+        });
     }
 
     public void demo4()
