@@ -3,21 +3,28 @@ package ch001;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 public class App {
     public static void main(String[] args) throws Exception {
 
-        List<Integer> numbers = Arrays.asList(60,50,80,70,90,30);
-       writeList(numbers);
+        List<Employee> employees = Arrays.asList(
+                new Employee("Ahmet Dağ",21d),
+                new Employee("Salih Aydın",22d),
+                new Employee("Asel Mavi",23d),
+                new Employee("Durmuş Özer",26d),
+                new Employee("Akın Arık",25d)
+                );
+       writeList(employees);
 
-        Collections.sort(numbers);
-        System.out.println("---");
-       writeList(numbers);
+        Collections.sort(employees);
+      System.out.println("---");
+      writeList(employees);
     }
 
-private static void writeList(List<Integer> collection)
+private static void writeList(Iterable  collection)
 {
-    for (Integer item: collection)
+    for (Object item: collection)
     {
         System.out.println(item);
     }

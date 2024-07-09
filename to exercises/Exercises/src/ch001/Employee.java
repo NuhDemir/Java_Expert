@@ -2,7 +2,7 @@ package ch001;
 
 import java.security.PublicKey;
 
-public class Employee {
+public class Employee implements Comparable{
     private String fullName;
     private Double salary;
 
@@ -38,5 +38,16 @@ public class Employee {
     @Override
     public String toString() {
         return getFullName() +" " +getSalary();
+    }
+
+    @Override
+    public int compareTo(Object other) {
+        if (other instanceof Employee)
+        {
+Employee emp = (Employee) other; //unboxing - cast
+          //  return this.getFullName().compareTo(emp.getFullName());
+            return (int) Math.round(this.getSalary()-emp.getSalary());
+        }
+      throw new UnsupportedOperationException("Unimplement method");
     }
 }
