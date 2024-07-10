@@ -75,6 +75,10 @@ pizzas[2] = new Pizza("Karışık");
             System.out.println(intArray[i] + " - ");
         }
         System.out.println("---");
+    
+
+
+
     }
 
 }
