@@ -1,6 +1,7 @@
 package ch006;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class ArraysDemo {
 
@@ -13,7 +14,7 @@ public class ArraysDemo {
         demo.initialize();
         demo.copy();
         demo.copyRange();
-        demo.fill();
+     //   demo.fill(2);
         demo.sort();
         demo.search();
 
@@ -23,11 +24,15 @@ public class ArraysDemo {
     }
 
     public void sort() {
-
+System.out.println("\nSorting an array: ");
+Arrays.sort(intArray);
+print(intArray);
     }
 
-    public void fill() {
-
+    public void fill(int key) {
+        System.out.println("\nFilling an array with  " + key + ": ");
+        Arrays.fill(intArray, key);
+        print(intArray);
     }
 
     public void copy() {
@@ -37,19 +42,27 @@ public class ArraysDemo {
         print(copy1);
 
         System.out.print("Only 0 to 4 copy: ");
-        int[] copy2 = Arrays.copyOf(intArray,5);
+        int[] copy2 = Arrays.copyOf(intArray, 5);
         print(copy2);
     }
 
     public void copyRange() {
-System.out.println("\nCopying the range of the array: ");
-int[] copy = Arrays.copyOfRange(intArray,4,12);
-System.out.println("Range 5 to  15 copy: ");
-print(copy);
+        System.out.println("\nCopying the range of the array: ");
+        int[] copy = Arrays.copyOfRange(intArray, 4, 12);
+        System.out.println("Range 5 to  15 copy: ");
+        print(copy);
     }
 
     public void initialize() {
+for (int i = 0; i<intArray.length;i++)
+{
+    Random r = new Random();
+    int randomInt = r.nextInt();
+    int number = randomInt % 100;
+    intArray[i]=number;
+}
 
+System.out.println();
     }
 
     public void print(int[] intArray) {
