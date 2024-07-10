@@ -62,7 +62,12 @@ for (int i = 0; i<intArray.length;i++)
     intArray[i]=number;
 }
 
-System.out.println();
+System.out.println("Original array: ");
+print(intArray);
+pizzas[0] = new Pizza("Peynirli");
+pizzas[1] = new Pizza("Mısırlı");
+pizzas[2] = new Pizza("Karışık");
+
     }
 
     public void print(int[] intArray) {
