@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1f35adb-9754-49a8-bee7-8a55d0cf1100" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ch003/Assignment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch003/MathOps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch003/PassObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +41,8 @@
     "Application.App.executor": "Run",
     "Application.Assignment.executor": "Run",
     "Application.HelloDate.executor": "Run",
+    "Application.MathOps.executor": "Run",
+    "Application.PassObject.executor": "Run",
     "Application.Precedence.executor": "Run",
     "Application.ShowProperties.executor": "Run",
     "Application.StaticKeyword.executor": "Run",
