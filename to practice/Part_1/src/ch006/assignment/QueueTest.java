@@ -27,6 +27,35 @@ System.out.println("Size: " +queue.size());
 
         System.out.println("Capacity: " +queue.getCapacity());
         System.out.println("Empty: " + queue.isEmpty());
-        
+        System.out.println("Full: " + queue.isFull());
+        System.out.println("Size: " +queue.size());
+
+
+        System.out.println("----------------");
+
+        System.out.println("Dequeue: " + queue.dequeue());
+        System.out.println("Size: " + queue.size());
+        System.out.println("Full: " + queue.isFull());
+        System.out.println("Dequeue: " + queue.dequeue());
+        System.out.println("Size: " + queue.size());
+        System.out.println("Dequeue: " + queue.dequeue());
+        System.out.println("Size: " + queue.size());
+        System.out.println("Dequeue: " + queue.dequeue());
+        System.out.println("Size: " + queue.size());
+        System.out.println("Dequeue: " + queue.dequeue());
+        System.out.println("Size: " + queue.size());
+        System.out.println("Dequeue: " + queue.dequeue()); // Should return null
+        System.out.println("Size: " + queue.size());
+        System.out.println("Empty: " + queue.isEmpty());
+        System.out.println("Full: " + queue.isFull());
+        queue.showElements();
+        System.out.println("----------");
+        System.out.println(queue.queue("5"));
+        System.out.println("Size: " + queue.size());
+        System.out.println("Full: " + queue.isFull());
+        System.out.println("Empty: " + queue.isEmpty());
+
+        System.out.println("------------");
+        queue.showElements();
     }
 }

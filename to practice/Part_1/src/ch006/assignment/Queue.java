@@ -46,4 +46,9 @@ public class Queue {
     public boolean isEmpty() {
         return false;
     }
+
+    public boolean isFull()
+    {
+        return false;
+    }
 }
