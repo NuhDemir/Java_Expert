@@ -15,6 +15,10 @@ public class Queue {
         return  lastItem;
 
     }
+    public int size()
+    {
+        return 0;
+    }
 
     private void rearrange()
     {
@@ -35,6 +39,11 @@ public class Queue {
 
     public void showElements()
     {
-        
+
+    }
+
+    // Is queue empty?
+    public boolean isEmpty() {
+        return false;
     }
 }
