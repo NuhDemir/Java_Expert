@@ -1,5 +1,7 @@
 package ch004.control;
 
+import static ch004.Range.range;
+
 public class BreakAndContinue {
     public static void main(String[] args) {
         for (int  i = 0; i <100; i++)
@@ -21,7 +23,7 @@ public class BreakAndContinue {
         {
             i++;
             int j = i*10;
-            if (j===1200) break;//out of loop
+            if (j==1200) break;//out of loop
             if (i %10 ==0) continue; //Top of loop
         System.out.println(i +" ");
 
