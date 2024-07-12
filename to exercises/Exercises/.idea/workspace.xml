@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1f35adb-9754-49a8-bee7-8a55d0cf1100" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ch004/Literals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch004/ShortCircuit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch004/Bool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch004/Bool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,22 +36,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Assignment.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AutoInc.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HelloDate.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MathOps.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PassObject.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Precedence.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ShowProperties.executor&quot;: &quot;Run&quot;,
-    &quot;Application.StaticKeyword.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "Application.Assignment.executor": "Run",
+    "Application.AutoInc.executor": "Run",
+    "Application.HelloDate.executor": "Run",
+    "Application.Literals.executor": "Run",
+    "Application.MathOps.executor": "Run",
+    "Application.PassObject.executor": "Run",
+    "Application.Precedence.executor": "Run",
+    "Application.ShortCircuit.executor": "Run",
+    "Application.ShowProperties.executor": "Run",
+    "Application.StaticKeyword.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
