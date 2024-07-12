@@ -7,6 +7,8 @@ public class Bool {
         Random r = new Random();
         int  i = r.nextInt(100);
         int j = r.nextInt();
+        System.out.println();
+
         
     }
 }
