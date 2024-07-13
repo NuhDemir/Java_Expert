@@ -1,4 +1,9 @@
 package ch004.control;
+//Return anahtar sözcüğünün iki amacı vardır:
+//1. Methodun hangi değeri döndüreceği(boş bir dönüş değeri yoksa)
+//2. Geçerli methodun çıkmasına neden olur, bu değeri döndürür.
+
+//void döndüren bir methodda return deyiminiz yoksa, bu methodun sonunda örtük bir return vardır, bu nedenle her zaman bir return deyimi eklemeniz gerekmez.
 
 public class TestWithReturn {
     static int test(int testval,int target)
