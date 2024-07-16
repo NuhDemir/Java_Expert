@@ -65,6 +65,6 @@ public class CalculatorOverloaded {
         print("Result of add(short, long): " + calculator.add(s, l1));
 
         // Double ve long değerleri toplama
-        print("Result of add(double, long): " + calculator.add(d1, l2));
+        print("Result of add(double, long): " + calculator.add(d1, l1));
     }
 }
