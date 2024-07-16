@@ -1,27 +1,24 @@
 package ch008.constant;
 
 public class Car {
-String make;
-String model;
-String year;
-int speed;
-int distance;
+    String make;       // Aracın markası
+    String model;      // Aracın modeli
+    String year;       // Aracın yılı
+    int speed;         // Aracın hızı
+    int distance;      // Aracın katettiği mesafe
 
-String owner;
+    String owner;      // Aracın sahibi
 
-//final parameter
-    public void speedUp(final int newSpeed)
-    {
-        //can't do that
-       // newSpeed *=2;
-        speed = newSpeed;
+    // final parametre
+    public void speedUp(final int newSpeed) {
+        // final anahtar kelimesi ile işaretlenen parametre değiştirilemez
+        // newSpeed *= 2; // Bu satır hata verecektir çünkü final değişkenin değeri değiştirilemez
+        speed = newSpeed; // Hızı yeni hız ile güncelle
     }
 
-    public void setOwner(final String newOwner)
-    {
-        //can't do that
-        //newOwner = "Nuh Demir";
-        owner = newOwner;
+    public void setOwner(final String newOwner) {
+        // final anahtar kelimesi ile işaretlenen parametre değiştirilemez
+        // newOwner = "Nuh Demir"; // Bu satır hata verecektir çünkü final değişkenin değeri değiştirilemez
+        owner = newOwner; // Sahibi yeni sahibi ile güncelle
     }
-
 }
