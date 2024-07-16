@@ -3,21 +3,21 @@ package ch008.constant;
 public class FinalParameter {
 
     public static void main(String[] args) {
-        //Car is a final reference
-        final Car car;//= new Car("Mercedes","2018",0,0);
+        // Car nesnesi final referanstır
+        final Car car; // Nesne tanımlandı ama başlatılmadı
 
-     //can't do this only if car is not defined above!
-     car  = new Car();
-     car.make = "Mercedes";
-     car.model = "E200";
-     car.year = "2011";
-     car.speed = 40;
-     car.distance = 20_421;
+        // car sadece yukarıda tanımlandığı gibi bir kez atanabilir
+        car = new Car(); // car referansına yeni bir Car nesnesi atanıyor
+        car.make = "Mercedes"; // Aracın markası
+        car.model = "E200"; // Aracın modeli
+        car.year = "2011"; // Aracın yılı
+        car.speed = 40; // Aracın hızı
+        car.distance = 20_421; // Aracın katettiği mesafe
 
-     //can't do this
-      //  car = new Car();
+        // Aşağıdaki satır hata verecektir çünkü final referansa yeniden atama yapılamaz
+        // car = new Car();
 
-        car.speedUp(111);
-        car.setOwner("Ali");
+        car.speedUp(111); // Aracın hızını artırma
+        car.setOwner("Ali"); // Aracın sahibini ayarlama
     }
 }
