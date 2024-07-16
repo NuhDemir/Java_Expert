@@ -1,34 +1,41 @@
 package ch008.passing;
 
+// ParameterPassing sınıfı
 public class ParameterPassing {
 
-    public void f(A aa)
-    {
+    // Nesne referansı alan 'f' metodu
+    public void f(A aa) {
+        // aa nesnesinin 'i' değişkenini bir artır
         aa.i++;
     }
-    public void f(int j) {
-        //j=i;
 
+    // Temel veri türü (primitive) alan 'f' metodu
+    public void f(int j) {
+        // 'j' değerini bir artır
         j++;
     }
 
+    // Ana metod (main)
     public static void main(String[] args) {
+        // ParameterPassing sınıfından bir nesne oluştur
         ParameterPassing o = new ParameterPassing();
 
-        //Passing primitive
+        // Temel veri türü (primitive) geçişi
         int i = 5;
-        System.out.println("i: " +i);
-        o.f(i);
-        System.out.println("i: " +i);
+        System.out.println("i'nin başlangıç değeri: " + i);
+        o.f(i); // 'f' metoduna 'i' değişkenini geçir
+        System.out.println("f metodundan sonra i'nin değeri: " + i);
         System.out.println("---------------");
 
-        //Passing a reference
+        // Nesne referansı geçişi
         A a = new A();
-        System.out.println("a.i: "+ a.i);
-        o.f(a);
-        System.out.println("a.i: "+ a.i);
+        System.out.println("a.i'nin başlangıç değeri: " + a.i);
+        o.f(a); // 'f' metoduna 'a' nesnesini geçir
+        System.out.println("f metodundan sonra a.i'nin değeri: " + a.i);
     }
 }
-class A  {
-    int i = 5;
+
+// A sınıfı
+class A {
+    int i = 5; // Tamsayı değişkeni
 }
