@@ -1,21 +1,22 @@
 package ch008.init;
 
 public class InitialValues {
-    //Instance variables
-    boolean t;//False
-    char c; //0
-    byte b; //0
-    short s; //0
-    int i; //0
-    long l; //0L
-    float f; //0.0F
-    double d; //0.0D
-    String str; //null
+    // Örnek değişkenleri (instance variables)
+    boolean t;   // Başlangıç değeri: false
+    char c;      // Başlangıç değeri: '\u0000' (ASCII 0)
+    byte b;      // Başlangıç değeri: 0
+    short s;     // Başlangıç değeri: 0
+    int i;       // Başlangıç değeri: 0
+    long l;      // Başlangıç değeri: 0L
+    float f;     // Başlangıç değeri: 0.0F
+    double d;    // Başlangıç değeri: 0.0D
+    String str;  // Başlangıç değeri: null
 
+    // Değişkenlerin başlangıç değerlerini yazdıran metot
     void print() {
-        System.out.println( "Data type      Initial values for instance variables\n" +
+        System.out.println("Data type      Initial values for instance variables\n" +
                 "boolean        " + t + "\n" +
-                "char           [" + c + "] "+ (int)c +"\n"+
+                "char           [" + c + "] " + (int)c + "\n" +
                 "byte           " + b + "\n" +
                 "short          " + s + "\n" +
                 "int            " + i + "\n" +
@@ -26,7 +27,7 @@ public class InitialValues {
     }
 
     public static void main(String[] args) {
-        InitialValues nesne = new InitialValues();
-        nesne.print();
+        InitialValues nesne = new InitialValues(); // Yeni bir nesne oluşturuluyor
+        nesne.print(); // Değişkenlerin başlangıç değerlerini yazdırma
     }
 }
