@@ -4,6 +4,20 @@ public class VarArgMethod {
 
     //main as var arg method
     public static void main(String[] args) {
+calculateAverage(4,3);
+calculateAverage(4,3,2);
+int a[] = {10,20,30,40,50,60,70,80,90,100};
+calculateAverageWithArray(a);
+int b[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+calculateAverageWithArray(b);
+
+average();//Call with no argument
+        average(4);
+        average(1,2,3,4);
+        average(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15);
+average(0xAB);
+average(b);
+anotherAverage(2,true,5,10,15);
 
     }
 
