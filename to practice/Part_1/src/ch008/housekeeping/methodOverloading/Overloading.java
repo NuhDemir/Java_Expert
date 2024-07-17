@@ -22,5 +22,15 @@ class Tree {
 }
 
 public class Overloading {
- 
+    public static void main(String[] args) {
+        for (int i = 0; i< 5; i++)
+        {
+            Tree tree1 = new Tree(i);
+            tree1.info();
+            tree1.info("overloading method");
+
+            //Calls overloaded constructor
+            new Tree();
+        }
+    }
 }
