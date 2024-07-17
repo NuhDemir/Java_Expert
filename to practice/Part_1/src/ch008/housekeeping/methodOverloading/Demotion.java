@@ -40,6 +40,6 @@ public class Demotion {
 
     public static void main(String[] args) {
         Demotion p = new Demotion();
-        p.tes;
+        p.testDouble();
     }
 }
