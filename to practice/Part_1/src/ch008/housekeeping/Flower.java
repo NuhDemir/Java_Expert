@@ -41,4 +41,9 @@ public class Flower {
         Flower flower = new Flower();
         flower.printPetalCount();
     }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
 }
