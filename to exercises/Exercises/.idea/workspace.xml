@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1f35adb-9754-49a8-bee7-8a55d0cf1100" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch005/EuclidGCD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch005/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch005/AppleToss.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch005/Field.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch005/GamePiece.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch005/HelloJavaX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch005/Physicist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch005/PrintAppleDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch005/PrintAppleDetails2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch005/PrintAppleDetails3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch005/PrintAppleDetails4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch005/PrintAppleDetails5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch005/Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +54,7 @@
     "Application.AutoInc.executor": "Run",
     "Application.EuclidGCD.executor": "Run",
     "Application.HelloDate.executor": "Run",
+    "Application.HelloJavaX.executor": "Run",
     "Application.Literals.executor": "Run",
     "Application.MathOps.executor": "Run",
     "Application.PassObject.executor": "Run",
