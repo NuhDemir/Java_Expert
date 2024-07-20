@@ -6,7 +6,7 @@ public interface GamePiece {
 
     void setPosition(int x,int y);
         //gets the current horizontal position of the piece on the field.
-    int getPosition();
+    int getPositionX();
 
     int getPositionY();
 
