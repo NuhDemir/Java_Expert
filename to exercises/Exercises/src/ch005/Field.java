@@ -56,5 +56,10 @@ public class Field extends JComponent {
     }
 
     public void detectCollisions() {
+        if (a1.isTouching(a2)){
+            System.out.println("Collision detected!");
+        }else {
+            System.out.println("Apples are not touching");
+        }
     }
 }
