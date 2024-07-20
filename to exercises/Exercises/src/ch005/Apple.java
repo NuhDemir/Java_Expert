@@ -46,15 +46,15 @@ public class Apple implements GamePiece {
         this.size = size;
         switch (size) {
             case SMALL:
-                diemeter = 0.9f;
+                diameter = 0.9f;
                 mass = 0.5f;
                 break;
             case MEDIUM:
-                diemeter = 1.0f;
+                diameter = 1.0f;
                 mass = 1.0f;
                 break;
             case LARGE:
-                diemeter = 1.1f;
+                diameter = 1.1f;
                 mass = 1.8f;
                 break;
         }
@@ -74,7 +74,7 @@ public class Apple implements GamePiece {
         int offset = (int) (diameter * Field.APPLE_SIZE_IN_PIXELS / 2);
         this.centerX = x;
         this.centerY = y;
-        boundingBox = new Rectangle(x,y,scaledLength,scaledLength);
+        boundingBox = new Rectangle(x, y, scaledLength, scaledLength);
     }
 
     @Override
@@ -94,24 +94,41 @@ public class Apple implements GamePiece {
 
     @Override
     public void draw(Graphics g) {
-g.setColor(Color.CYAN);
-g.fillOval(x,y,scaledLength,scaledLength);
+        g.setColor(Color.CYAN);
+        g.fillOval(x, y, scaledLength, scaledLength);
     }
 
     @Override
     public boolean isTouching(GamePiece otherPiece) {
-        double xdiff = x-otherPiece.getPositionX();
-        double ydiff = y-otherPiece.getPositionY();
-        double distance = Math.sqrt(xdiff*xdiff+ydiff*ydiff);
-        if (distance<diameter){
+        double xdiff = x - otherPiece.getPositionX();
+        double ydiff = y - otherPiece.getPositionY();
+        double distance = Math.sqrt(xdiff * xdiff + ydiff * ydiff);
+        if (distance < diameter) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
 
-    public void printDetails(){
-        System.out.println("mass: " +mass);
-        //Print
+    public void printDetails() {
+        System.out.println("mass: " + mass);
+        //Print the exact diameter:
+        //System.out.println(" diameter: " +diameter);
+        String niceNames[] = getAppleSizes();
+        if (diameter < 5.0f) {
+            System.out.println(niceNames[SMALL]);
+        } else if (diameter < 10.0f) {
+            System.out.println(niceNames[MEDIUM]);
+        } else {
+            System.out.println(niceNames[LARGE]);
+        }
+        System.out.println(" position. [" + x + ", " + y + ")");
+
+
+    }
+
+    public static String[] getAppleSizes() {
+        return new String[]
+                {"SMALL", "MEDIUM", "LARGE"};
     }
 }
