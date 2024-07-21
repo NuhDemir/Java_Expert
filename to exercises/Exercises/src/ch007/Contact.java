@@ -1,43 +1,27 @@
 package ch007;
 
 public class Contact {
-    private String firstName;
-    private String lastName;
-    private String phoneNumber;
+    private String name;
+    private String number;
 
-    public Contact(String firstName,String lastName,String phoneNumber){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phoneNumber = phoneNumber;
+    public Contact(String name, String number) {
+        this.name = name;
+        this.number = number;
     }
 
-    public String getFirstName(){
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String name){
-        this.firstName= firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getLastName(){
-        return lastName;
+    public String getNumber() {
+        return number;
     }
 
-    public void setLastName(String lastName){
-        this.lastName=lastName;
-    }
-
-    public String getPhoneNumber(){
-        return phoneNumber;
-    }
-    public void setPhoneNumber(String phoneNumber){
-        this.phoneNumber = phoneNumber;
-    }
-
-
-    @Override
-    public String toString() {
-        return "first name: " +firstName +"\nlastname: " +lastName +" phone number: "+phoneNumber;
-
+    public void setNumber(String number) {
+        this.number = number;
     }
 }
