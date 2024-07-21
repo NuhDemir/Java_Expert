@@ -12,6 +12,7 @@ public class ProgressDemo {
 
         JLabel label = new JLabel("Download Progress", JLabel.CENTER);
         Thread pretender = new Thread(new ProgressPretender(label));
+        frame.setVisible(true);
     }
 }
 
@@ -43,4 +44,5 @@ class ProgressPretender implements Runnable {
         }
 
     }
+
 }
