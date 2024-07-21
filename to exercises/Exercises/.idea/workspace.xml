@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1f35adb-9754-49a8-bee7-8a55d0cf1100" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ch005/Euclid/Euclid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch005/logTest/LogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch006/URLConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch006/URLDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch006/URLProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch006/URLQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch007/HelloJavaAgain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch007/HelloMouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch007/HelloMouseHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch007/PhoneGridDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch007/ProgressDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch007/TextInputs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch007/Widget.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch005/PrintAppleDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch005/PrintAppleDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch005/PrintAppleDetails2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch005/PrintAppleDetails2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,16 +53,25 @@
     "Application.AppleToss.executor": "Run",
     "Application.Assignment.executor": "Run",
     "Application.AutoInc.executor": "Run",
+    "Application.Euclid.executor": "Run",
     "Application.EuclidGCD.executor": "Run",
     "Application.HelloDate.executor": "Run",
+    "Application.HelloJavaAgain.executor": "Run",
     "Application.HelloJavaX.executor": "Run",
+    "Application.HelloMouse.executor": "Run",
+    "Application.HelloMouseHelper.executor": "Run",
     "Application.Literals.executor": "Run",
+    "Application.LogTest.executor": "Run",
     "Application.MathOps.executor": "Run",
     "Application.PassObject.executor": "Run",
     "Application.Precedence.executor": "Run",
+    "Application.PrintAppleDetails2.executor": "Run",
+    "Application.ProgressDemo.executor": "Run",
     "Application.ShortCircuit.executor": "Run",
     "Application.ShowProperties.executor": "Run",
     "Application.StaticKeyword.executor": "Run",
+    "Application.TextInputs.executor": "Run",
+    "Application.URLDemo.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
