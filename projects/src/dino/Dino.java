@@ -65,9 +65,39 @@ public class Dino extends Frame implements KeyListener {
     private void initCactusGraphics() {
         Random random = new Random();
 
+        // Kaktüs sayısı
+        int numberOfCacti = 2;
 
-        //Kaktüs sayısı
+        // Kaktüs başlangıç konumları ve boyutları
+        int initialXPosition = 10;
+        int initialYPosition = 100;
+        int initialHeight = 60;
+        int initialPadding = 10;
 
+        // Grafik elemanları listesini başlat
+        graphicalElements = new ArrayList<MyGraph>();
+        for (int i = 0; i < numberOfCacti; i++) {
+            // Rastgele adım belirleyici
+            int step = random.nextInt(10) + 1;
+
+            // Yeni bir kaktüs grafik nesnesi oluştur
+            MyGraph cactus = new MyGraph();
+
+            // Kaktüsün X pozisyonunu hesapla
+            cactus.xPosition = initialXPosition * 30 + step * 10 + 600;
+
+            // Kaktüsün yüksekliğini hesapla
+            cactus.height = 10 + (6 * step) + 2;
+
+            // Kaktüsün Y pozisyonunu hesapla
+            cactus.yPosition = 300 - initialHeight;
+
+            // Kaktüsün genişliğini hesapla
+            cactus.padding = 8 + step / 2;
+
+            // Grafik elemanları listesine kaktüsü ekle
+            graphicalElements.add(cactus);
+        }
     }
 
     private void gameOver(Graphics g) {
@@ -101,10 +131,10 @@ public class Dino extends Frame implements KeyListener {
     }
 
     private class MyGraph {
-        int x_ = 10;
-        int y_ = 100;
-        int h_ = 60;
-        int p_ = 10;
+        int xPosition = 10;  // Kaktüsün X pozisyonu
+        int yPosition = 100; // Kaktüsün Y pozisyonu
+        int height = 60;     // Kaktüsün yüksekliği
+        int padding = 10;    // Kaktüsün genişliği veya kenar boşluğu
     }
 
     class MoveAction extends AbstractAction {
@@ -114,7 +144,7 @@ public class Dino extends Frame implements KeyListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            onEnterPresses = true;
+            isEnterPressed = true;
             drawPanel.repaint();
         }
     }
@@ -128,8 +158,8 @@ public class Dino extends Frame implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_SPACE) {
-            if (gameOver) {
-                gameOver = false;
+            if (isGameOver) {
+                isGameOver = false;
                 restartGame(getGraphics());
             }
         }
