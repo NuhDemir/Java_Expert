@@ -38,7 +38,7 @@ public class Dino extends Frame implements KeyListener {
     Color cactusColorSecondary = Color.GREEN;
 
     // Dinozorun zıplama mekaniği için değişkenler
-    int jumpHeight = 0;
+    int jump = 0;
     int jumpYPosition = 0;
     int yPosition = 0;
 
@@ -59,6 +59,10 @@ public class Dino extends Frame implements KeyListener {
 
     public static void main(String[] args) {
         new Dino();
+    }
+
+    public Dino() {
+        setVisible(true);
     }
 
     //Create the cactus on random position
@@ -100,6 +104,43 @@ public class Dino extends Frame implements KeyListener {
         }
     }
 
+    //kaktüs çizimi
+    private void drawCactus(Graphics g) {
+        // Başlangıç pozisyonları ve diğer değişkenler tanımlanıyor
+        int xPosition = 0;
+        int yPosition = 0;
+        int height = 0;
+        int padding = 0;
+
+        // Grafiksel elemanları döngü ile işlemek için
+        for (MyGraph myGraph : graphicalElements) {
+            // Grafik elemanlarının pozisyon ve boyut bilgileri alınıyor
+            xPosition = myGraph.xPosition;
+            yPosition = myGraph.yPosition;
+            height = myGraph.height;
+            padding = myGraph.padding;
+
+            int maxH = 180; // Maksimum yükseklik
+            int i = padding * 2 + 40; // Çizim için hesaplanan değer
+            int j = padding * 2 + 40; // Çizim için hesaplanan değer
+            int y1 = yPosition + 40; // Y pozisyonu için hesaplanan değer
+            int y2 = yPosition + 60; // Y pozisyonu için hesaplanan değer
+
+            // Eğer x pozisyonu sıfırdan küçükse, zıplama değerini sıfırla
+            if (xPosition + j - jump < 0) {
+                jump = 0;
+            }
+
+            // Çeşitli grafik elemanlarını çiz
+            draw(g, xPosition - i - jump, y1, height, padding);
+            draw(g, xPosition - jump, yPosition, maxH, padding * 2);
+            draw(g, xPosition + j - jump, y2, height, padding);
+
+            // Ek bir çizim fonksiyonu çağrılıyor
+            drow(g, xPosition - jump, height, padding, i, j, y1, y2);
+        }
+    }
+
     private void gameOver(Graphics g) {
     }
 
@@ -109,7 +150,19 @@ public class Dino extends Frame implements KeyListener {
     private void drawSun(Graphics g) {
     }
 
-    private void drawCactus(Graphics g, int x, int h, int p, int i, int j, int y2) {
+    private void drow(Graphics g, int x, int h, int p, int i, int j, int y1, int y2) {
+        Graphics2D gsds = (Graphics2D) g;
+        gsds.setPaint(cactusColorPrimary);
+        gsds.fillRect(x - i + p, y1 + h, i, p);
+        Graphics2D gsdds = (Graphics2D) g;
+        gsdds.setPaint(cactusColorSecondary);
+        gsdds.fillRect(x - i + 2 * p, y1 + h - p, i - 2 * p, p);
+        Graphics2D gsd2 = (Graphics2D) g;
+        gsd2.setPaint(cactusColorSecondary);
+        gsd2.fillRect(x + p * 2, y2 + h, j - p, p);
+        Graphics2D gsd3 = (Graphics2D) g;
+        gsd3.setPaint(cactusColorPrimary);
+        gsd3.fillRect(x + p * 4, y2 + h - p, j - 4 * p, p);
     }
 
     private void drawSurface(Graphics g, int x, int y, int maxH) {
@@ -125,7 +178,6 @@ public class Dino extends Frame implements KeyListener {
     }
 
     private class DrawPanel extends JPanel {
-    public
 
 
     }
