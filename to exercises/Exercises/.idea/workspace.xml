@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1f35adb-9754-49a8-bee7-8a55d0cf1100" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ch007/BorderLayoutDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch007/Buttons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch007/Labels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch007/MenuDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch007/ModalDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch008/CopyChannel2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch008/CopyChannels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch008/CopyFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch008/DateAtHost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch007/NestedPanelDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch007/NestedPanelDemo.java" afterDir="false" />
-    </list>
+    <list default="true" id="d1f35adb-9754-49a8-bee7-8a55d0cf1100" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,47 +32,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "Application.AppleToss.executor": "Run",
-    "Application.Assignment.executor": "Run",
-    "Application.AutoInc.executor": "Run",
-    "Application.BorderLayoutDemo.executor": "Run",
-    "Application.Buttons.executor": "Run",
-    "Application.CopyChannel2.executor": "Run",
-    "Application.CopyChannels.executor": "Run",
-    "Application.CopyFile.executor": "Run",
-    "Application.Euclid.executor": "Run",
-    "Application.EuclidGCD.executor": "Run",
-    "Application.HelloDate.executor": "Run",
-    "Application.HelloJavaAgain.executor": "Run",
-    "Application.HelloJavaX.executor": "Run",
-    "Application.HelloMouse.executor": "Run",
-    "Application.HelloMouseHelper.executor": "Run",
-    "Application.Labels.executor": "Run",
-    "Application.Literals.executor": "Run",
-    "Application.LogTest.executor": "Run",
-    "Application.MathOps.executor": "Run",
-    "Application.MenuDemo.executor": "Run",
-    "Application.ModalDemo.executor": "Run",
-    "Application.NestedPanelDemo.executor": "Run",
-    "Application.PassObject.executor": "Run",
-    "Application.PhoneGridDemo.executor": "Run",
-    "Application.Precedence.executor": "Run",
-    "Application.PrintAppleDetails2.executor": "Run",
-    "Application.ProgressDemo.executor": "Run",
-    "Application.ShortCircuit.executor": "Run",
-    "Application.ShowProperties.executor": "Run",
-    "Application.StaticKeyword.executor": "Run",
-    "Application.TextInputs.executor": "Run",
-    "Application.URLDemo.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AppleToss.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Assignment.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AutoInc.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BorderLayoutDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Buttons.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CopyChannel2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CopyChannels.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CopyFile.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Euclid.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EuclidGCD.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloDate.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloJavaAgain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloJavaX.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloMouse.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloMouseHelper.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Labels.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Literals.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LogTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MathOps.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MenuDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ModalDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NestedPanelDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PassObject.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PhoneGridDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Precedence.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PrintAppleDetails2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProgressDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ShortCircuit.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ShowProperties.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StaticKeyword.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TextInputs.executor&quot;: &quot;Run&quot;,
+    &quot;Application.URLDemo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\EvAn\Desktop\Github\4-Java\Java_Expert\to exercises\Exercises\src\ch007" />
