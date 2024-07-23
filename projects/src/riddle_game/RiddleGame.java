@@ -9,40 +9,8 @@ public class RiddleGame {
         Scanner scanner = new Scanner(System.in);
         int score = 0;
 
-        // Riddle nesnelerini oluştur
-        Riddle[] riddles = {
-                new Riddle(
-                        "Ağzım olmadan konuşurum ve kulaklarım olmadan duyarım. Vücudum yok ama rüzgarla canlanırım. Ben neyim?",
-                        "Yankı",
-                        "İpucu: Ses yansıtma yeteneğiyle bilinir."
-                ),
-                new Riddle(
-                        "Ne kadar çok alırsan o kadar çok geride bırakırım. Ben neyim?",
-                        "Ayak izleri",
-                        "İpucu: Yürüdüğünüzde geride bıraktığınız şey."
-                ),
-                new Riddle(
-                        "Canlı değilim ama büyüyebilirim; ciğerlerim yok ama havaya ihtiyacım var; ağzım yok ama su beni öldürür. Ben neyim?",
-                        "Ateş",
-                        "İpucu: Isı ve ışık üretir."
-                ),
-                new Riddle(
-                        "Geceleri gökyüzünde parlarım, ama bir yıldız değilim. Ben neyim?",
-                        "Ay",
-                        "İpucu: Dünya'nın doğal uydusudur."
-                ),
-                new Riddle(
-                        "Bir kapı gibi açılırım, ama bir kapı değilim. Anahtarım yoktur ama açılırım. Ben neyim?",
-                        "Kitap",
-                        "İpucu: Bilgi içerir ve sayfaları vardır."
-                ),
-                new Riddle(
-                        "Gün içinde uzarım, ama gece kaybolurum. Ben neyim?",
-                        "Gölge",
-                        "İpucu: Işık varken oluşur."
-                )
-        };
-
+        // Riddle nesnelerini RiddleData sınıfından alın
+        Riddle[] riddles = RiddleData.getRiddles();
         int numRiddles = riddles.length;
         List<Integer> askedRiddles = new ArrayList<>();
 
