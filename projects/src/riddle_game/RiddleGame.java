@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class RiddleGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int score=0;
+        int score = 0;
 
         // Riddle nesnelerini oluştur
         Riddle[] riddles = {
@@ -43,8 +43,8 @@ public class RiddleGame {
 
         int numRiddles = riddles.length;
 
-        while (true){
-            int randomIndex = (int) (Math.random()*numRiddles);
+        while (true) {
+            int randomIndex = (int) (Math.random() * numRiddles);
             Riddle selectRiddle = riddles[randomIndex];
 
             //Kullanıcıya bulmacayı göster.
@@ -53,19 +53,27 @@ public class RiddleGame {
             //Kullanıcının cevabını alın.
             String userAnswer = scanner.nextLine();
 
-            if (userAnswer.equalsIgnoreCase(selectRiddle.getAnswer())){
+            if (userAnswer.equalsIgnoreCase(selectRiddle.getAnswer())) {
                 System.out.println("Doğru cevap!");
                 score++;
-            }else {
+            } else {
                 //Eğer cevap yanlışsa ,ipucu teklif edin
                 System.out.println("Yanlış! İpucu ister misiniz? (evet/hayır)");
                 String giveHint = scanner.nextLine().toLowerCase();
-                if (giveHint.equals("evet")){
-                    System.out.println("İpucu: "+ selectRiddle.getHint());
+                if (giveHint.equals("evet")) {
+                    System.out.println("İpucu: " + selectRiddle.getHint());
                 }
             }
 
             //Kullanıcının devam edip etmeyeceğini soralım
+            System.out.println("Oyuna devam etmek ister misiniz? (evet/hayır)");
+            String playAgain = scanner.nextLine().toLowerCase();
+            if (!playAgain.equals("evet")) {
+                break;
+            }
         }
+        //Son puanı göster
+        System.out.println("Son puanınız: " + score);
+        System.out.println("Oynadığınız için teşekkürler.");
     }
 }
