@@ -55,7 +55,7 @@ public class FinalOverriding {
         OverridingPrivate2 overridingPrivate2 = new OverridingPrivate2();
         // overridingPrivate2 nesnesinin f() metodu çağrılır.
         // Bu, OverridingPrivate2 sınıfındaki f() metodunu çalıştırır.
-        overridingPrivate2.f();
+//        overridingPrivate2.f();
 
         // overridingPrivate2 nesnesinin g() metodu çağrılır.
         // Bu, OverridingPrivate2 sınıfındaki g() metodunu çalıştırır.
@@ -67,12 +67,12 @@ public class FinalOverriding {
         // o1 nesnesinin f() metodu çağrılır.
         // Ancak f() metodu OverridingPrivate sınıfında private olarak tanımlandığı için
         // bu metot çağrılamaz ve derleme hatası oluşur.
-        o1.f();
+//        o1.f();
 
         // o1 nesnesinin g() metodu çağrılır.
         // Ancak g() metodu OverridingPrivate sınıfında private olarak tanımlandığı için
         // bu metot çağrılamaz ve derleme hatası oluşur.
-        o1.g();
+//        o1.g();
 
         // WithFinals türünde bir değişken, OverridingPrivate2 nesnesine atanır.
         WithFinals withFinals = overridingPrivate2;
@@ -80,11 +80,11 @@ public class FinalOverriding {
         // withFinals nesnesinin f() metodu çağrılır.
         // Ancak f() metodu WithFinals sınıfında private olarak tanımlandığı için
         // bu metot çağrılamaz ve derleme hatası oluşur.
-        withFinals.f();
+//        withFinals.f();
 
         // withFinals nesnesinin g() metodu çağrılır.
         // Ancak g() metodu WithFinals sınıfında private olarak tanımlandığı için
         // bu metot çağrılamaz ve derleme hatası oluşur.
-        withFinals.g();
+//        withFinals.g();
     }
 }
