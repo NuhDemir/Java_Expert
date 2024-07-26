@@ -1,5 +1,13 @@
 package ch004.the_final.blank_final;
 
+/*Blank Final:
+ * başlatma değerleri olmayan final alanlarıdır.
+ * Derleyici, boş final alanlarının kullanılmadan önce ilklendirmesini sağlar.
+ * bu tür finallere tanımlama(atama) işlemi->
+ * 1- ya bir kurucuda
+ * 2- alanın tanımladığı noktada
+ *
+ * */
 class Poppet {
     private int i;
 
