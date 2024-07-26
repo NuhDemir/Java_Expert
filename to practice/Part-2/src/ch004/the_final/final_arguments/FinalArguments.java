@@ -33,5 +33,13 @@ public class FinalArguments {
         arguments.without(null);
     }
 }
-
+/*
+ * Final method kullanmak için iki neden vardır:
+ * 1- Miras alan bir sınıfın bu methodu geçersiz kılarak anlamını değiştirmesini
+ * önlemek için methoda bir 'KİLİT' koymaktır.
+ * Bu, bir methodun davranışının kalıtım sırasında korunduğundan emin olmak istediğinizde tasarım nedenleriyle yapılır.
+ *
+ *
+ * 2- Verimlilik: Java'nın önceki sürümlerinde, bir methodu final yaparsanız,derleyicinin bu methoda yapılan tüm çağrıları
+ * satır içi çağrılara dönüştürmesine izin vermiş olurdunuz. */
 
