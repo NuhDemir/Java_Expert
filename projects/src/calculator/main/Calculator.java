@@ -33,6 +33,15 @@ public class Calculator {
         window = new JFrame("Calculator");
         window.setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
         window.setLocationRelativeTo(null); //Move window to center
+        comboTheme = initCombo(new String[]{"Simple", "Colored", "DarkTheme"}, 230, 30, "Theme", themeSwitchEventConsumer);
+        comboCalcType = initCombo(new String[]{"Standart", "Scientific"}, 20, 30, "Calculator type", calcTypeSwitchEventConsumer);
+
+        int[] x = {MARGIN_X_POSITION, MARGIN_X_POSITION + 90, 200, 290, 380};
+        int[] y = {MARGIN_Y_POSITION, MARGIN_Y_POSITION + 100, MARGIN_Y_POSITION + 180, MARGIN_Y_POSITION + 260, MARGIN_Y_POSITION + 340, MARGIN_Y_POSITION + 420};
+
+        inText = new JTextField("0");
+
+        window.setVisible(true);
     }
 
     public JComboBox<String> initCombo(String[] items, int x, int y, String toolTip, Consumer consumerEvent) {
@@ -40,6 +49,12 @@ public class Calculator {
 
     private JButton initButton(String label, int x, int y, ActionListener event) {
 
+    }
+
+    public double calc(double x, String input, char operator) {
+    }
+
+    private void repaintFont() {
     }
 
     private Consumer<ItemEvent> calcTypeSwitchEventConsumer = event -> {
