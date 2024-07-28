@@ -1,9 +1,6 @@
 # Java Expert
 
-
 <img src="https://raw.githubusercontent.com/NuhDemir/Java_Expert/main/img/java%208.jpg">
-
-
 
 **Java Expert** GitHub repository'sine hoş geldiniz! Bu repo, Java'yı öğrenmek ve ustalaşmak isteyen herkes için kapsamlı bir kaynak sunar. İster yeni başlayan, ister deneyimli bir geliştirici olun, Java konularında bilgi sahibi olmanız için projeler, egzersizler ve gerekli bilgileri burada bulabilirsiniz.
 
@@ -44,6 +41,23 @@ Bu repo, öğrenmenizi pekiştirecek çeşitli projeler ve egzersizler içerir. 
 ## Sorular ve Tartışmalar
 
 Projelerin yanı sıra, Java konularını test edebileceğiniz sorular ve daha derin düşünmeye teşvik eden tartışma noktaları da bulunur.
+
+## Ek Kaynaklar
+
+Aşağıdaki tablo, Java öğrenmek ve geliştirmek için kullanabileceğiniz ek kaynakları içermektedir:
+
+| Kaynak Adı | Bağlantı |
+|------------|----------|
+| Google Java Style Guide | [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html) |
+| Oracle Java Tutorials | [Oracle Java Tutorials](https://docs.oracle.com/javase/tutorial/) |
+| Thinking in Java | [Thinking in Java](https://archive.org/details/ThinkingInC) |
+| Baeldung | [Baeldung](https://www.baeldung.com/) |
+| Javatpoint | [Javatpoint](https://www.javatpoint.com/) |
+| W3Schools Java Tutorial | [W3Schools Java Tutorial](https://www.w3schools.com/java/) |
+| dev.java | [dev.java](https://dev.java/learn/) |
+| GeeksforGeeks Java | [GeeksforGeeks Java](https://www.geeksforgeeks.org/java/) |
+| TutorialsPoint Java | [TutorialsPoint Java](https://www.tutorialspoint.com/java/index.html) |
+| FreeCodeCamp Java Courses | [FreeCodeCamp Java Courses](https://www.freecodecamp.org/news/learn-java-free-java-courses-for-beginners/) |
 
 ---
 
