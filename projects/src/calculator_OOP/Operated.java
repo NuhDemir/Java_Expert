@@ -1,4 +1,6 @@
 package calculator_OOP;
 
-public class Operated {
+public interface Operated {
+
+    Double getResult(Double... numbers);
 }
