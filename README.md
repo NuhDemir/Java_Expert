@@ -61,4 +61,4 @@ Aşağıdaki tablo, Java öğrenmek ve geliştirmek için kullanabileceğiniz ek
 
 ---
 
-Bu tanıtımı, repo'nuzun içeriğine ve vizyonunuza daha uygun hale getirmek için özelleştirebilirsiniz!
+Bu projeyi daha detaylı hale getirmek için destekleyebilirsiniz.
