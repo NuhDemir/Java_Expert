@@ -1,5 +1,10 @@
 # Java Expert
 
+
+<img src="https://raw.githubusercontent.com/NuhDemir/Java_Expert/main/img/java%208.jpg">
+
+
+
 **Java Expert** GitHub repository'sine hoş geldiniz! Bu repo, Java'yı öğrenmek ve ustalaşmak isteyen herkes için kapsamlı bir kaynak sunar. İster yeni başlayan, ister deneyimli bir geliştirici olun, Java konularında bilgi sahibi olmanız için projeler, egzersizler ve gerekli bilgileri burada bulabilirsiniz.
 
 ## İçerik
