@@ -15,12 +15,7 @@ public class Account {
     private double balance;
     public LocalDateTime creationDate;
 
-    private final String tlArt =
-            "  _______   _\n" +
-                    " /_  __(_) (_)\n" +
-                    "  / /  / / / \n" +
-                    " / /  / / /  \n" +
-                    "/_/  /_/_/   \n";
+    private final String tlArt ="TL";
 
     public Account(String accountHolderName, String accountNumber, String owner, double balance) {
         this.accountHolderName = accountHolderName;
@@ -36,7 +31,9 @@ public class Account {
         System.out.println("Yeni Kullanıcı Adı: ");
         String newName = scanner.nextLine();
         String oldName = this.accountHolderName;
-        this.accountNumber = newName;
+        String oldowner = this.owner;
+        this.owner=newName;
+        this.accountHolderName = newName;
         System.out.println("Kullanıcı Adınız başarıyla Güncellenmiştir.");
         String message = "Eski Kullanıcı adı" + oldName + "\n" + newName + " olarak değiştirilmiştir.";
         Bank.logTransaction(message);//İşlemi kaydediyoruz...
