@@ -1,11 +1,8 @@
 package BankApp;
 
-
 import java.time.LocalDateTime;
-import java.time.chrono.ChronoLocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class Bank {
@@ -13,13 +10,13 @@ public class Bank {
     private static String branchName = "Merkez Şube";
     private static String bankCode = "14532";
     private static String branchCode = "55392";
-    private static String address = "Refah Mah. Huzur Cad. No:001,Hiçlik";
+    private static String address = "Refah Mah. Huzur Cad. No:001, Hiçlik";
     private static String phoneNumber = "+90 212 123 456";
     private static String email = "info@ZeroBank.com";
     private static String customerServicePhone = "+90 212 777 1111";
     public static String workingHours = "Pazartesi-Cuma: 09:00 - 17:00";
 
-
+    private static List<Account> accounts = new ArrayList<>();
     public static List<String> transactionHistory = new ArrayList<>();
 
     public static void logTransaction(String message) {
@@ -53,4 +50,39 @@ public class Bank {
         System.out.println(bankInfo);
     }
 
+    public static void addAccount(Account account) {
+        accounts.add(account);
+        String message = "Yeni hesap eklendi: " + account.getAccountNumber();
+        logTransaction(message);
+    }
+
+    public static void removeAccount(Account account) {
+        accounts.remove(account);
+        String message = "Hesap kaldırıldı: " + account.getAccountNumber();
+        logTransaction(message);
+    }
+
+    public static void clearTransactionHistory() {
+        transactionHistory.clear();
+        logTransaction("İşlem geçmişi temizlendi.");
+    }
+
+    public static void listAllAccounts() {
+        for (Account account : accounts) {
+            System.out.println("Hesap Numarası: " + account.getAccountNumber() + ", Hesap Sahibi: " + account.getAccountHolderName() + ", Bakiye: " + account.getBalance() + " " + account.getTlArt());
+        }
+    }
+
+    public static Account findAccountByNumber(String accountNumber) {
+        for (Account account : accounts) {
+            if (account.getAccountNumber().equals(accountNumber)) {
+                return account;
+            }
+        }
+        return null;
+    }
+
+    public static List<Account> getAccounts() {
+        return accounts;
+    }
 }
