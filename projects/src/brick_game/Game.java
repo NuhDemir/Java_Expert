@@ -59,8 +59,8 @@ public class Game extends JPanel implements KeyListener, ActionListener {
         Graphics2D g2d = (Graphics2D) g;
 
         // Arka plan rengini degrade olarak ayarla
-        Color color1 = Color.decode("#E9C46A");
-        Color color2 = Color.decode("#F4A261");
+        Color color1 = Color.decode("#111");
+        Color color2 = Color.decode("#1111");
         int width = getWidth();
         int height = getHeight();
         GradientPaint gp = new GradientPaint(0, 0, color1, width, height, color2);
@@ -97,8 +97,8 @@ public class Game extends JPanel implements KeyListener, ActionListener {
         // Oyun başlamamışsa başlangıç mesajını göster
         if (!gameStarted) {
             g2d.setColor(Color.decode("#8C3061"));
-            g2d.setFont(new Font("Serif", Font.BOLD, 30));
-            g2d.drawString("Press Any Key to Start", 200, height / 2);
+            g2d.setFont(new Font("Serif", Font.BOLD, 32));
+            g2d.drawString("Press Any Key to Start", 100, height / 2);
         }
 
         // Top ekranın altına düştüyse 'Game Over' mesajını göster
