@@ -13,8 +13,8 @@ public class MainMenu extends JPanel {
         this.optionsMenu = optionsMenu;
         setLayout(new BorderLayout());
 
-        JLabel title = new JLabel("Brick Game", SwingConstants.CENTER);
-        title.setFont(new Font("Arial", Font.BOLD, 64));
+        JLabel title = new JLabel("BRİCK GAME", SwingConstants.CENTER);
+        title.setFont(new Font("poppins", Font.BOLD, 72));
         title.setForeground(Color.WHITE);
 
         JPanel buttonsPanel = new JPanel();
@@ -39,6 +39,7 @@ public class MainMenu extends JPanel {
         exitButton.setFont(new Font("Arial", Font.BOLD, 20));
         exitButton.addActionListener(e -> System.exit(0));
 
+
         buttonsPanel.add(playButton);
         buttonsPanel.add(optionsButton);
         buttonsPanel.add(exitButton);
@@ -46,6 +47,6 @@ public class MainMenu extends JPanel {
         add(title, BorderLayout.NORTH);
         add(buttonsPanel, BorderLayout.SOUTH);
 
-        setBackground(Color.DARK_GRAY);
+        setBackground(Color.BLACK);
     }
 }

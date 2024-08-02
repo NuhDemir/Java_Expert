@@ -10,8 +10,7 @@ public class MapGenerator {
     public int bricksHeight;
 
     public MapGenerator(int level) {
-        // Harita yapısını seviye parametresine göre ayarla
-        int rows = level; // Örneğin, seviye 1 için 3 satır, seviye 2 için 5 satır
+        int rows = level * 2 + 1; // 1 seviyesine göre 3 satır, 2 seviyesine göre 5 satır vs.
         int cols = 7; // Sabit sütun sayısı
         map = new int[rows][cols];
         for (int[] map1 : map) {
