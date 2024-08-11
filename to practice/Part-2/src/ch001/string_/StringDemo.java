@@ -18,7 +18,10 @@ public class StringDemo {
 
         System.out.println("a kaçıncı eleman: " + message.indexOf("a"));
         System.out.println("a kaçıncı eleman(aramaya sondan başlar): " + message.lastIndexOf("a"));
-
+        String newMessage = message.replace(' ', '-');
+        System.out.println("yer değiştirme: " + newMessage);
+        System.out.println("tüm kelimeleri küçült: "+newMessage.toLowerCase());
+    System.out.println("tüm kelimeleri büyüt: "+newMessage.toUpperCase());
     }
 
 
