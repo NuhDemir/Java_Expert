@@ -40,7 +40,7 @@ public class Citizien {
         Citizien.notionality="Turkiye Cumhuriyeti";
 
         System.out.println("Nationality: "+Citizien.notionality);
-        System.out.println("Mehmet's nationality: "+c1.nat);
+        System.out.println("Mehmet's nationality: ");
     }
 
 }
