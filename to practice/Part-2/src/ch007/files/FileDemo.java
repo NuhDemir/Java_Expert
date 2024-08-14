@@ -7,7 +7,7 @@ public class FileDemo {
 
     public static void main(String[] args) {
         getFileInfo();
-        writeFile();
+     //   writeFile();
         readFile();
     }
 
@@ -47,15 +47,15 @@ public class FileDemo {
             throw new RuntimeException(e);
         }
     }
-
-    public static void writeFile() {
-        try {
-            BufferedWriter writer = new BufferedWriter(new File("C:\\Users\\EvAn\\Desktop\\Github\\4-Java\\Java_Expert\\to practice\\Part-2\\src\\ch007\\files\\student.txt"));
-writer.write("Ahmet");
-System.out.println("Dosyayı okuma: ");
-writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//
+//    public static void writeFile() {
+//        try {
+//            BufferedWriter writer = new BufferedWriter(new File("C:\\Users\\EvAn\\Desktop\\Github\\4-Java\\Java_Expert\\to practice\\Part-2\\src\\ch007\\files\\student.txt"));
+//writer.write("Ahmet");
+//System.out.println("Dosyayı okuma: ");
+//writer.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 }
