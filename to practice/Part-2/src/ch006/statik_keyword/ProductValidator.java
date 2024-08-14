@@ -17,7 +17,7 @@ public class ProductValidator {
     public void getInfo() {
         System.out.println("---");
     }
-    
+
 
 }
 
