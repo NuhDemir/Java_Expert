@@ -1,19 +1,15 @@
 package ch006.statik_keyword;
 
-import java.util.Date;
-import java.util.Stack;
+
 
 public class Citizien {
 
     String tckno;
     String firstName;
     String lastName;
-    Date dateOfBirth;
-        String placeOfBirth;
-        char sex;
 
-        String fatherName;
-        String motherName;
+
+
 
         static String notionality;
 
