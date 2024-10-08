@@ -19,6 +19,7 @@ public class URLConsumer extends Thread {
         delay = new Random();
     }
 
+
     public void run() {
         while (keepWorking || !queue.isEmpty()) {
             String url = queue.getURL();
