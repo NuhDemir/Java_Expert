@@ -1,6 +1,7 @@
 package ch008;
 
-public class encapsulation_class_control {
+public class
+encapsulation_class_control {
     public int publicVar = 1; //Her yerden erişilebilir.
     protected int protectedVar = 2;//Aynı paket veya alt sınıflardan erişilebilir.
     int defaultVar = 3; //Aynı paket içinde erişilebilir.
